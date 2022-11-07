@@ -15,7 +15,7 @@ phases:
   post_build:
     commands:
       - rm yarn.lock
-      # - rm -rf node_modules
+      - rm -rf node_modules
       # - yarn install --production
 
 artifacts:
