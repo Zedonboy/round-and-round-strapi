@@ -14,7 +14,7 @@ phases:
 
   post_build:
     commands:
-      - rm package-lock.json
+      - rm yarn.lock
       - rm -rf node_modules
       # - yarn install --production
 
