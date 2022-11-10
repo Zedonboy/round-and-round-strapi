@@ -5,17 +5,18 @@ phases:
   pre_build:
     commands:
       - npm update -g npm
-      - npm install -g yarn
-      - yarn install
+      # - npm install -g yarn
+      # - yarn install
+      - npm install
 
   build:
     commands:
-      - NODE_ENV=production yarn build
+      - NODE_ENV=production npm run build
 
   post_build:
     commands:
-      - rm yarn.lock
-      - rm -rf node_modules
+      # - rm yarn.lock
+      # - rm -rf node_modules
       # - yarn install --production
 
 artifacts:
